@@ -1,7 +1,10 @@
 """Randomly pick customer and print customer info"""
-from random import choice
-import customers
+import random
+from customers import get_customers_from_file
 
-print(choice(customers.customers))
-
+def pick_random_customer(customers):
+    winner = random.choice(customers)
+    name = chosen_customer.name
+    email = chosen_customer.name
+    print(f"{name} at {email} has won!")
 
